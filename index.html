@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>醫流 Med-Flow - 智慧醫療流程，釋放專業無限可能</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for Inter - Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800; /* Light background and dark text for readability */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition duration-300">
+                醫流 <span class="text-base text-gray-500 font-medium">MedFlow</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#solutions" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">解決方案</a></li>
+                    <li><a href="#benefits" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">為什麼選擇醫流</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-600 to-indigo-700 text-white py-20 px-4 rounded-b-xl shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                醫流 Med-Flow - 智慧醫療流程，釋放專業無限可能
+            </h1>
+            <p class="text-lg md:text-xl lg:text-2xl font-light mb-8 max-w-3xl mx-auto">
+                告別繁瑣，迎接高效。醫流以領先 AI 科技，為醫師打造更快速、更便捷、更「懶人」的智慧工作新典範。
+            </p>
+            <a href="#solutions" class="inline-block bg-white text-blue-700 hover:bg-blue-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                探索我們的智慧解決方案
+            </a>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">我們的智慧解決方案</h2>
+
+            <!-- BoneAge Prediction Software -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 mb-16">
+                <div class="md:w-1/2 lg:w-2/5 order-2 md:order-1 text-center md:text-left">
+                    <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4">AI 骨齡預測軟體</h3>
+                    <p class="text-gray-700 text-lg mb-4">
+                        告別繁瑣的圖譜比對，AI 骨齡預測軟體將判讀時間縮短至**秒級**。透過深度學習模型，提供高度**精準**且**一致**的骨齡預測結果參考，輔助醫師快速評估兒童生長發育狀況，制定個性化治療方案。
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <li><strong class="text-gray-800">極速判讀：</strong> AI 秒預測，大幅提升效率。</li>
+                        <li><strong class="text-gray-800">高度精準：</strong> 基於海量數據訓練，結果可靠。</li>
+                        <li><strong class="text-gray-800">輔助決策：</strong> 助力醫師精準評估與規劃治療。</li>
+                        <li><strong class="text-gray-800">標準化報告：</strong> 自動生成結構化報告，減少人為差異。</li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white hover:bg-blue-700 py-2 px-6 rounded-md shadow transition duration-300">
+                        了解更多 BoneAge
+                    </a>
+                </div>
+                <div class="md:w-1/2 lg:w-2/5 order-1 md:order-2">
+                    <!-- Placeholder image for BoneAge software -->
+                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=BoneAge+AI" alt="AI 骨齡預測軟體示意圖" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+
+            <!-- RaDict Radiology Report Dictation Software -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="md:w-1/2 lg:w-2/5 text-center md:text-left">
+                    <h3 class="text-2xl md:text-3xl font-bold text-blue-700 mb-4">RaDict 放射科報告聽寫軟體</h3>
+                    <p class="text-gray-700 text-lg mb-4">
+                        解放雙手，聲控智寫。RaDict 專為放射科醫師打造，透過先進的 AI 語音辨識技術，支援**中英文混合語音輸入**，並透過 AI **自動校正轉錄錯誤成正確的報告格式**，確保高辨識準確率與報告品質。
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2 mb-6">
+                        <li><strong class="text-gray-800">多語言支援：</strong> 口述中英文皆可，流暢無阻。</li>
+                        <li><strong class="text-gray-800">AI 智能校正：</strong> 自動修正轉錄錯誤，確保格式與內容正確。</li>
+                        <li><strong class="text-gray-800">高效便捷：</strong> 大幅縮短報告撰寫時間。</li>
+                        <li><strong class="text-gray-800">輕鬆舒適：</strong> 減少手部疲勞，提升工作體驗。</li>
+                    </ul>
+                    <a href="#contact" class="inline-block bg-blue-600 text-white hover:bg-blue-700 py-2 px-6 rounded-md shadow transition duration-300">
+                        了解更多 RaDict
+                    </a>
+                </div>
+                <div class="md:w-1/2 lg:w-2/5">
+                    <!-- Placeholder image for RaDict software -->
+                    <img src="https://placehold.co/600x400/a78bfa/ffffff?text=RaDict+AI" alt="RaDict 放射科報告聽寫軟體示意圖" class="w-full h-auto rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose MedFlow Section -->
+    <section id="benefits" class="py-16 px-4 bg-blue-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">為什麼選擇醫流？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Benefit Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 text-4xl mb-4">💡</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">AI 智慧驅動</h3>
+                    <p class="text-gray-600">運用最前沿的 AI 技術，提供精準、智能的輔助。</p>
+                </div>
+                <!-- Benefit Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">效率極大化</h3>
+                    <p class="text-gray-600">大幅縮短重複性工作時間，提升整體工作流暢度。</p>
+                </div>
+                <!-- Benefit Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">操作簡便，輕鬆上手</h3>
+                    <p class="text-gray-600">直觀的使用者介面，讓醫師輕鬆掌握新工具。</p>
+                </div>
+                <!-- Benefit Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-600 text-4xl mb-4">🏆</div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">釋放專業潛能</h3>
+                    <p class="text-gray-600">讓醫師專注於診斷，提供更高品質的病患照護。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="contact" class="bg-gradient-to-br from-indigo-700 to-blue-600 text-white py-16 px-4 rounded-t-xl shadow-lg">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">準備好體驗更智慧的醫療流程了嗎？</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                立即聯絡我們，了解醫流如何為您的診所或醫院帶來變革，讓您的專業時間更有價值。
+            </p>
+            <a href="mailto:contact@med-flow.org" class="inline-block bg-white text-blue-700 hover:bg-blue-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                立即諮詢
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-8 px-4">
+        <div class="container mx-auto text-center text-sm">
+            <p>&copy; 2025 醫流 Med-Flow. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="hover:text-white transition duration-300">隱私權政策</a> |
+                <a href="#" class="hover:text-white transition duration-300">服務條款</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
