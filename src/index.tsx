@@ -32,7 +32,7 @@ function App() {
     renderer.setPixelRatio(window.devicePixelRatio); // 提升渲染品質
 
     // --- 粒子設定 (模擬神經元或資料點) ---
-    const particleCount = 400; // 粒子數量，可調整
+    const particleCount = 100; // 粒子數量，可調整
     const particlesGeometry = new THREE.BufferGeometry();
     const particlePositions = new Float32Array(particleCount * 3);
     const particleColors = new Float32Array(particleCount * 3); // 用於儲存每個粒子的顏色
