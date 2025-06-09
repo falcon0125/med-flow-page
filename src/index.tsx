@@ -1,8 +1,6 @@
 // App.js
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three'; // 導入 three.js 函式庫
-import boneAgeImgUrl from '/img/bone-age.png';
-import RadictImgUrl from '/img/radict.png';
 
 // 在 JSX/Vue 模板或 DOM 操作中使用
 
@@ -84,7 +82,7 @@ function App() {
         ),
         isFiring: false, // 標記粒子是否正在點火
         fireStartTime: 0, // 點火開始時間戳
-        fadeDuration: 300, // 粒子淡出所需時間 (毫秒)，速度加快
+        fadeDuration: 200, // 粒子淡出所需時間 (毫秒)，速度加快
         currentSize: baseParticleSize, // 追蹤粒子當前的渲染尺寸
         connections: [], // 儲存與其連接的粒子 ID 和線段起始索引
       });
@@ -302,13 +300,13 @@ function App() {
       const timeoutId = setTimeout(() => {
         fireNode(toNodeId);
         propagationTimeoutIds.delete(timeoutId); // 清除此 timeout 的 ID
-      }, 50); // 線條亮起 0.05 秒後觸發下一個粒子
+      }, 300); // 線條亮起 0.05 秒後觸發下一個粒子
       propagationTimeoutIds.add(timeoutId); // 儲存此 timeout 的 ID
     };
 
     // --- 初始點火爆發：啟動兩個神經元群 ---
     const numInitialClusters = 2; // 要啟動的神經叢數量
-    const activationClusterRadius = 60; // 每個神經叢的激活半徑
+    const activationClusterRadius = 20; // 每個神經叢的激活半徑
 
     // 隨機選擇兩個初始種子神經元
     const seedNodeIds: number[] = [];
@@ -333,7 +331,7 @@ function App() {
     const randomFireInterval = setInterval(() => {
       const randomNodeId = Math.floor(Math.random() * particleCount);
       fireNode(randomNodeId);
-    }, 200); // 每 0.2 秒隨機觸發一個粒子，頻率加快
+    }, 500); // 每 0.2 秒隨機觸發一個粒子，頻率加快
 
     // --- 滑鼠互動控制 (用於攝影機環繞，增加互動感) ---
     let mouseX = 0, mouseY = 0;
