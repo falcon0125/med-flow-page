@@ -1,6 +1,10 @@
 // App.js
 import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three'; // 導入 three.js 函式庫
+import boneAgeImgUrl from '/img/bone-age.png';
+import RadictImgUrl from '/img/radict.png';
+
+// 在 JSX/Vue 模板或 DOM 操作中使用
 
 function App() {
   // 參考 Canvas 元素，用於 three.js 渲染
@@ -552,7 +556,7 @@ function App() {
             </div>
             <div className="md:w-1/2 lg:w-2/5 order-1 md:order-2">
               {/* Placeholder image for BoneAge software */}
-              <img src="img/bone-age.png" alt="AI 骨齡預測軟體示意圖" className="w-full h-auto rounded-lg shadow-lg" />
+              <img src="bone-age.png" alt="AI 骨齡預測軟體示意圖" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
 
@@ -576,7 +580,7 @@ function App() {
             </div>
             <div className="md:w-1/2 lg:w-2/5">
               {/* Placeholder image for RaDict software */}
-              <img src="img/radict.gif" alt="RaDict 放射科報告聽寫軟體示意圖" className="w-full h-auto rounded-lg shadow-lg" />
+              <img src="radict.gif" alt="RaDict 放射科報告聽寫軟體示意圖" className="w-full h-auto rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
