@@ -1,0 +1,54 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Node.js
+# node_modules
+node_modules/
+# dist
+dist/
+build/
+*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# npm package files
+.npm
+
+# yarn package files
+.yarn-integrity
+.yarn-metadata.json
+
+# pnpm package files
+.pnpm-store
+
+# dotenv files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# misc
+.DS_Store
